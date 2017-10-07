@@ -1,0 +1,6 @@
+_build
+.DS_Store
+config.codekit
+logs/
+node_modules/
+npm-debug*.log*
