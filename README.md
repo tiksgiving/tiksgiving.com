@@ -26,7 +26,7 @@ To start the local Node development server:
 npm start
 ```
 
-All of the web content is static (see the [https://github.com/tiksgiving/tiksgiving.com/tree/master/public](public/) directory).
+All of the web content is static (see the [`public_html` directory](https://github.com/tiksgiving/tiksgiving.com/tree/master/public) directory).
 
 To serve the site from the local development server (which includes in-browser live reloading for rapid development):
 
