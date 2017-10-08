@@ -22,7 +22,7 @@
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV='development' live-server public_html --no-browser",
     "prod": "cross-env NODE_ENV='production' node ./server.js",
-    "build": "shx rm -rf _build && shx mkdir -p _build && shx cp -R public_html/* _build",
+    "build": "shx rm -rf _build && shx mkdir -p _build && shx cp -R public_html/* _build && shx cp -R public_html/.well-known _build/.",
     "preprod": "npm run build"
   }
 }

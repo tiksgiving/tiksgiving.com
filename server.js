@@ -57,7 +57,9 @@ app.initServer = function () {
 
   if (!module.parent) {
     let listener = app.listen(PORT_SERVER, function () {
-      console.log('Listening on port http://%s:%s', internalIp.v4(), listener.address().port);
+      internalIp.v4().then(addr => {
+        console.log('Listening on port http://%s:%s', addr, listener.address().port);
+      });
     });
   }
 
